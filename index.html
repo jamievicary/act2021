@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 
 body {
     margin: 0 !important;
 	background-color: #f8f8f8;
     padding: 0 !important;
-	overflow-x: hidden;
+}
+
+#wrapper {
+	overflow-x: hidden;	
 }
 
 * {
@@ -56,8 +60,10 @@ body {
 }
 
 #left {
+	background-color:blue;
 }
 #right {
+	background-color:red;
 }
 #middle {
 	
@@ -76,8 +82,20 @@ h2 {
 	margin-left: -460px;
 	padding-left: 460px;
 	margin-bottom: 25px;
-	width: 1700px;
+	width: 1920px;
 	font-size: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+	#grid {
+		width: 100%;
+		display: grid;
+		grid-column-gap: 10px;
+		grid-template-columns: 0% 100% 0%;
+	}
+	#middle {
+		padding-right: 20px;
+	}
 }
 
 </style>
@@ -85,7 +103,7 @@ h2 {
 </head>
 <body>
 
-
+<div id="wrapper">
 <div id="grid">
 <div id="left"></div>
 <div id="middle">
@@ -211,6 +229,8 @@ possible. More infomration will be made available soon.</p>
 </div>
 
 <div id="right"></div>
+
+</div>
 
 </div>
 
