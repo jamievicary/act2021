@@ -6,8 +6,8 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    width="497.75397mm"
-   height="126.37866mm"
-   viewBox="0 0 497.75397 126.37866"
+   height="66.378662mm"
+   viewBox="0 0 497.75397 66.378661"
    version="1.1"
    id="svg970">
   <defs
@@ -29,7 +29,7 @@
   </metadata>
   <g
      id="layer1"
-     transform="translate(169.50199,-51.715429)">
+     transform="translate(169.50199,-81.715429)">
     <g
        id="g2133"
        transform="matrix(0.26458333,0,0,0.26458333,-185.49741,17.670388)">
