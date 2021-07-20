@@ -31,6 +31,12 @@ body {
 	padding-bottom: 15px
 }
 
+@media (max-width: 1920px) {
+	#banner {
+		width: 100vw;
+	}
+}
+
 #heading {
 	text-align:center;
 	font-size:50px;
@@ -66,6 +72,10 @@ body {
 #middle {
 }
 
+#conference-photo {
+  width: 100%;
+}
+
 li {
 	margin: 3px;
 }
@@ -73,18 +83,13 @@ li {
 h2 {
 	background-image: url("sky.jpg");
 	background-repeat: no-repeat;
-	background-size: 1920px 85px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-left: -350px;
-	padding-left: 350px;
-	margin-bottom: 25px;
-	width: 1920px;
+	background-size: 100% 100%;
+	padding: 20px 15px;
 	font-size: 30px;
 }
 
 div.people>div>img {
-	width:170px;
+	width:168px;
 	height:200px;
     object-fit: cover;
 }
@@ -135,6 +140,10 @@ div.people {
   border-collapse: collapse;
   margin-bottom: 30px;
   font-size: 11px;
+}
+
+#schedule-div {
+  overflow-x: scroll;
 }
 
 td.distinguished {
@@ -254,7 +263,8 @@ industry showcase event.</p>
 </table>
 </p>
 
-<p><table id="schedule">
+<div id="schedule-div">
+  <table id="schedule">
     <thead>
       <tr>
         <th>Time (BST)</th>
@@ -434,11 +444,11 @@ industry showcase event.</p>
       </tr>
     </tbody>
   </table>
-</p>
+</div>
 
 <h2>Conference Photo</h2>
 
-<a href="conference_photo_original.png"><img style="width:1200px" src="conference_photo_webpage.jpg"/></a>
+<a href="conference_photo_original.png"><img id="conference-photo" src="conference_photo_webpage.jpg"/></a>
 
 <p>Left-to-right (with a front-to-back sublist): Tomas Jakl, Nick Hu, Nihil Shah, Hao Xu, Ieva Cepaite, Amin Karamlou, Amy Searle, Jules Hedges, Callum Reader, Benjamin Rodatz, Bruno Gavranovic, Swaraj Dash, (Razin Shaikh, Zanzi Mihejevs, Dylan Braithwaite, Joseph Grant), Joseph Martin, Paul Wilson, Cole Comfort, Matteo Capucci, Alex Rice, Calin Tataru, Simon Willerton, Ioannis Markakis, George Kate, Robert Furber, and Lukas Heidemann.
 </p>
